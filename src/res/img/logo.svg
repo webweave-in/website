@@ -10,5 +10,5 @@
             font-family: 'Quicksand', fallBackFonts, sans-serif;
         }
     </style>
-    <text x="90" y="40" class="Rrrrr">WebWeave</text>
+    <text x="90" y="40">WebWeave</text>
 </svg>
