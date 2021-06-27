@@ -4,6 +4,7 @@ import Particles from 'react-tsparticles';
 import Navbar from '../Navbar/Navbar';
 import 'react-typist/dist/Typist.css';
 import './home.css'
+import Footer from '../Footer/Footer';
 
 export default function Home() {
     return (
@@ -17,21 +18,28 @@ export default function Home() {
                        "events":{
                           "onClick":{
                              "enable":true,
-                             "mode":"push"
+                             "mode":"repulse"
                           },
                           "onHover":{
                              "enable":true,
-                             "mode":"repulse"
+                             "mode":"attract"
                           },
                           "resize":true
                        },
                        "modes":{
+                           "attract": {
+                              "distance": 500,
+                              "duration": 0.1,
+                              "factor": 1,
+                              "maxSpeed": 50,
+                              "speed": 1.1
+                           },
                           "push":{
                              "particles_nb":4
                           },
                           "repulse":{
-                             "distance":200,
-                             "duration":0.4
+                             "distance":300,
+                             "duration":0.1
                           }
                        }
                     },
@@ -74,10 +82,10 @@ export default function Home() {
                        }
                     },
                     "detectRetina":true
-                 }} />
+            }} />
             
             <div className="container d-flex align-items-center justify-content-center fullscreen">
-                <div className="hvcenter f-5rem brand">
+                <div className="hvcenter brand" id="banner">
                     <Typist cursor={{hideWhenDone: true, hideWhenDoneDelay: 0}}>
                         <span>
                             WebDesign
@@ -92,7 +100,17 @@ export default function Home() {
                     
                 </div>
             </div>
-        </div>
-        
+            <div className="d-flex flex-column align-items-center justify-content-center fullscreen bg-light darkslategray">
+                <div className="container">
+                  <div className="f-500 f-h1 f-quicksand">
+                     We build beautiful and functional websites,<br/> that your business deserves.
+                  </div>
+                  <div className="f-500 f-h5 f-quicksand text-start">
+                     Send us an email at : <a href = "mailto:mail@webweave.in">mail@webweave.in</a>
+                  </div>
+                </div>
+            </div>
+        <Footer/>
+      </div>
     )
 }

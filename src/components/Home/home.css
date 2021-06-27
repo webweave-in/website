@@ -3,3 +3,15 @@
     height: 100%;
     width: 100%;
 }
+
+#banner {
+    font-size: clamp(40px,10vw, 100px);
+}
+
+.fullscreen-dark {
+    background-color: darkslategray;
+}
+
+/* .bg-lightdark {
+    background : linear-gradient(#fff, #212529 20%);
+} */

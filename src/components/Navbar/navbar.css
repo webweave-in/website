@@ -1,3 +1,13 @@
 .brand {
     font-family : 'Quicksand'
 }
+
+#title {
+    font-size: clamp(16px, 3vw, 25px);
+}
+
+.navbar.active {
+    /* background: linear-gradient(rgb(255,255,255), rgb(0,0,0)); */
+    /* background : black; */
+    background-color: white;
+}

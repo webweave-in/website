@@ -1,0 +1,9 @@
+.footer {
+    min-height: 240px;
+    height: 20vh;
+}
+
+.iconlink {
+    text-decoration: none;
+    color: darkslategray;
+}
