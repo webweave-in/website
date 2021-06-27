@@ -1,0 +1,14 @@
+<svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style type="text/css">@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500');</style>
+    </defs>
+    <style>
+        @font-face {
+            font-family: 'Quicksand';
+        }
+        svg{
+            font-family: 'Quicksand', fallBackFonts, sans-serif;
+        }
+    </style>
+    <text x="90" y="40" class="Rrrrr">WebWeave</text>
+</svg>
